@@ -58,7 +58,7 @@ The living example is [agentic-harness](https://github.com/DanielLourencoFil/age
 | --- | --- | --- |
 | 7 | **Burden of proof** — "it's done" is a claim, not a fact → the evidence gate; "compiles" ≠ "works" | ✅ [published](chapters/07-burden-of-proof.md) |
 | 8 | **The framing effect** — "find bugs" manufactures bugs → neutral audit prompts that allow "none found" | ✅ [published](chapters/08-framing.md) |
-| 9 | **The illusory foundation** — a green gate is only as strong as what it checks → negative tests for the gates themselves | ⛔ blocked on [agentic-harness#2](https://github.com/DanielLourencoFil/agentic-harness/pull/2) merging |
+| 9 | **The illusory foundation** — a green gate is only as strong as what it checks → negative tests for the gates themselves | ✅ [published](chapters/09-illusory-foundation.md) |
 | 10 | **Pre-registration** — kill criteria written before the bet, so failure cannot be renegotiated | planned |
 | 11 | **Calibration** — trust as a measured number: real vs confabulated findings per audit | ⛔ blocked on enough audit data |
 | 12 | **The mechanized elenchus** — four questions no feature may skip → planning gated on testable answers | ⛔ blocked on the /plan-feature skill shipping |
