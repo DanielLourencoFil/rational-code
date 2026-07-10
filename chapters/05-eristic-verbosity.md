@@ -9,8 +9,8 @@ catalogued since antiquity, perfected by every filibuster since — includes a m
 that commits no logical error at all: **bury the question**. Speak long enough,
 densely enough, across enough fronts at once, and no interlocutor can check the
 claims faster than you produce them. The modern names are *argumentum verbosium* and
-the Gish gallop; the modern economics is Brandolini's law — refutation costs an order
-of magnitude more than production.
+the Gish gallop; the economics is simple and brutal — checking a claim costs far more
+than making one, so volume alone can exhaust the checker.
 
 Verbosity does not make an argument invalid. It makes it **unexaminable**, which is
 worse: an invalid argument can be refuted, an unexaminable one just wins.

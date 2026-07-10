@@ -15,6 +15,7 @@ const BANNED = [
   [/guarantees? (good|correct|quality|design)/i, "tool-capability overclaim"],
   [/\bforces? (good|correct) design/i, "tool-capability overclaim"],
   [/silver bullet/i, "overclaim idiom"],
+  [/brandolini/i, "retired framing (thesis, 2026-07-11) — do not reintroduce"],
 ];
 
 // 2. Voice — the book never narrates its own drafting process.

@@ -22,7 +22,7 @@ asked. Tell it "review this module and find the bugs" and it *will* find bugs �
 whether or not any exist — because the prompt presupposes their existence, and
 producing them is the fluent completion. The result is confabulated findings:
 plausible defect reports for correct code, each costing an expensive human
-investigation to dismiss (Brandolini again, in audit form).
+investigation to dismiss — confabulations are cheap to produce and dear to rule out.
 
 The same contamination works from inside: a session that wrote the code cannot audit
 it, for the same reason an author cannot proofread their own paragraph — the

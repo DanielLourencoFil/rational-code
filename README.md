@@ -5,34 +5,51 @@ development — and how to turn each principle into something a machine enforces
 
 ## The thesis
 
-Brandolini's law observes that refuting nonsense costs an order of magnitude more than
-producing it. Language models did not invent that asymmetry, and they did not make
-production free — tokens cost money, and useful output costs prompting, context, and
-human feedback. What changed is narrower, and more consequential: **the marginal cost
-of producing a *plausible* artifact collapsed relative to the cost of verifying it —
-and plausibility stopped being evidence.**
+An agentic AI is an abundance machine: it can produce more candidate artifacts —
+lines, modules, whole features — than anyone can judge. Abundance moves the
+bottleneck. While candidates were scarce and expensive, producing them was the cost
+center and judging them was incidental. When candidates become abundant and cheap —
+not free: tokens, prompting and human feedback all cost — **selection becomes the
+entire game**: a system's output is worth exactly what its selection process can
+vouch for.
 
-Fluency used to be an expensive signal. A well-structured module, confident technical
-prose — these *cost* hours of someone competent, and because they were costly they
-were evidence of competence. A model decouples the signal from the trait: its best and
-its worst outputs arrive equally eloquent, in whatever volume is requested. Much of
-that output is genuinely good — which is precisely the problem: good and bad come in
-identical wrapping. A signal that becomes cheap stops discriminating, and a signal
-that doesn't discriminate carries no evidential weight. Every judgment that used to
-lean on it must now lean on independent verification instead.
+Selection costs split in two, and the split organizes everything in this book:
 
-Two consequences organize this book. First, **verification — competent attention plus
-wired checks — is the scarce resource**, so that is where the discipline must live:
-persona prompts fail because they try to improve production, which was never the
-bottleneck; gates work because they police verification. Second, every technique here
-answers the same question — *how do you keep a discourse honest when one participant
-can produce plausible artifacts faster than anyone can check them, and eloquence no
-longer tells you which ones to trust?*
+- **Specified properties** — types align, every case is handled, tests pass,
+  invariants hold — are cheap to verify, often cheaper than generating the candidate:
+  checking a solution is easier than finding one. These can be wired into machines
+  that never tire and extend no charity.
+- **Unspecified properties** — does it fit the intent? does the whole cohere? is it
+  the right problem? — are expensive to verify, because verifying them *is* human
+  judgment.
 
-The toolkit for that question is old: the discipline of rational discourse — univocal
+The split is treacherous because model output looks uniformly good: its best and its
+worst work arrive equally fluent, so nothing on the surface says where a given
+artifact's defects live. Surface quality stopped carrying evidence; only checking
+does.
+
+The discipline follows: **specify everything that can be specified; wire every
+specified property into a mechanical filter; run the filters early and often; spend
+human judgment only on survivors, and only on the questions machines cannot ask.**
+Specification itself is the highest-leverage act — every property moved from the
+second column into the first converts dear judgment into cheap checking. That is what
+a spec, a scenario checklist, and a schema are *for*. And it explains the two facts
+this book keeps returning to: persona prompts fail because they try to improve
+production, which was never the bottleneck; gates work because they police selection,
+which is.
+
+One requirement is easy to miss and fatal to skip: **the specification must stand
+outside the code–test pair.** A test derived from what the code does proves nothing;
+code molded to a finite, visible test proves nothing either — both are the same
+circle. Verification carries evidential force only when what is checked comes from an
+independent point: scenarios owned by a human, properties quantified over generated
+cases, checks the implementation cannot see coming.
+
+The toolkit for all of this is old: the discipline of rational discourse — univocal
 terms, complete case analysis, burden of proof on the claimant, falsifiable claims,
-calibrated trust. What is new is that in software, unlike in conversation, **most of
-these norms can be physically enforced.** The secret is knowing the principles and
+calibrated trust — is the oldest catalogue of specifiable properties of good
+thinking. What is new is that in software, unlike in conversation, **most of these
+norms can be physically enforced.** The secret is knowing the principles and
 discovering how to wire them.
 
 ## The constitutional rule of this book
