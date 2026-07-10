@@ -88,10 +88,10 @@ The living example is [agentic-harness](https://github.com/DanielLourencoFil/age
 
 ## What this book is not
 
-- It does not claim tools can force good design, correct requirements, or truth.
-  Tools verify **form**; content — the right scenarios, the right definitions, the
-  right problem — remains human judgment. Any stronger claim is treated here as a
-  defect.
+- Tools cannot deliver good design, correct requirements, or truth — and this book
+  never claims they can. Tools verify **form**; content — the right scenarios, the
+  right definitions, the right problem — remains human judgment. Any stronger claim
+  is treated here as a defect.
 - It is not an argument that philosophical training substitutes for engineering
   competence. The engineering has its own receipts, in its own repositories; this book
   is about the protocol that disciplines both.
