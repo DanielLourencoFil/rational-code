@@ -80,6 +80,12 @@ The living example is [agentic-harness](https://github.com/DanielLourencoFil/age
 | 13 | **Reductio ad absurdum, automated** — state the invariant, let the machine hunt the counterexample → property-based testing | ⛔ blocked on property tests landing in a real project |
 | 14 | **Testimony** — AI output as the deposition of a fluent, unreliable witness → the Humean policy: verify everything | ✅ [published](chapters/14-testimony.md) |
 
+### Part IV — Composition (how the answers assemble into a machine)
+
+| # | Chapter | Status |
+| --- | --- | --- |
+| 15 | **The selection cascade and the coherence horizon** — cheap filters first, killing only the provably dead; checkpoints spaced shorter than the generator's coherence horizon; mechanical composition rules + the story bible against drift | ✅ [published](chapters/15-selection-cascade.md) |
+
 ## What this book is not
 
 - It does not claim tools can force good design, correct requirements, or truth.
