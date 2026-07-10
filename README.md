@@ -5,20 +5,35 @@ development — and how to turn each principle into something a machine enforces
 
 ## The thesis
 
-Brandolini's law says refuting nonsense costs an order of magnitude more than producing
-it. Agentic AI has pushed that asymmetry to its limit: **producing fluent artifacts now
-costs nothing, so all discipline must migrate to verification.** This is why persona
-prompts fail (they try to improve production, which is no longer the bottleneck) and why
-gates work (they police verification, which is the scarce resource). An AI writes code
-the way a fluent speaker argues: with perfect confidence, at any length, right or wrong.
-Every technique in this book is one answer to the same question — *how do you keep a
-discourse honest when one participant produces unlimited fluent output at zero cost?*
+Brandolini's law observes that refuting nonsense costs an order of magnitude more than
+producing it. Language models did not invent that asymmetry, and they did not make
+production free — tokens cost money, and useful output costs prompting, context, and
+human feedback. What changed is narrower, and more consequential: **the marginal cost
+of producing a *plausible* artifact collapsed relative to the cost of verifying it —
+and plausibility stopped being evidence.**
 
-The classical toolkit for that question is old: it is the discipline of rational
-discourse — univocal terms, complete case analysis, burden of proof on the claimant,
-falsifiable claims, calibrated trust. What is new is that in software, unlike in
-conversation, **most of these norms can be physically enforced.** The secret is knowing
-the principles and discovering how to wire them.
+Fluency used to be an expensive signal. A well-structured module, confident technical
+prose — these *cost* hours of someone competent, and because they were costly they
+were evidence of competence. A model decouples the signal from the trait: its best and
+its worst outputs arrive equally eloquent, in whatever volume is requested. Much of
+that output is genuinely good — which is precisely the problem: good and bad come in
+identical wrapping. A signal that becomes cheap stops discriminating, and a signal
+that doesn't discriminate carries no evidential weight. Every judgment that used to
+lean on it must now lean on independent verification instead.
+
+Two consequences organize this book. First, **verification — competent attention plus
+wired checks — is the scarce resource**, so that is where the discipline must live:
+persona prompts fail because they try to improve production, which was never the
+bottleneck; gates work because they police verification. Second, every technique here
+answers the same question — *how do you keep a discourse honest when one participant
+can produce plausible artifacts faster than anyone can check them, and eloquence no
+longer tells you which ones to trust?*
+
+The toolkit for that question is old: the discipline of rational discourse — univocal
+terms, complete case analysis, burden of proof on the claimant, falsifiable claims,
+calibrated trust. What is new is that in software, unlike in conversation, **most of
+these norms can be physically enforced.** The secret is knowing the principles and
+discovering how to wire them.
 
 ## The constitutional rule of this book
 

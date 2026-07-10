@@ -15,8 +15,8 @@ must cost the claimant evidence, not cost the listener an investigation.
 ## The failure mode in agentic coding
 
 Every AI work session ends with an assertion: *done, implemented, tests pass, it
-works now.* Untreated, each of those is a burden-shift — the agent asserts for free,
-and the human either investigates (expensive) or accepts (dangerous). Multiply by
+works now.* Untreated, each of those is a burden-shift — asserting costs the agent a
+sentence, and the human either investigates (expensive) or accepts (dangerous). Multiply by
 dozens of assertions per day and the economics of Brandolini's law take over the
 whole collaboration: cheap claims, dear checks, and a slowly growing inventory of
 things everyone believes and no one verified.

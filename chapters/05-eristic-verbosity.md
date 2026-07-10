@@ -18,8 +18,8 @@ worse: an invalid argument can be refuted, an unexaminable one just wins.
 ## The failure mode in agentic coding
 
 This is the book's thesis at its purest, because an AI is an involuntary Gish
-galloper: it produces fluent volume at zero marginal cost, with no stake in whether
-anyone can review it. Left ungoverned, the artifacts drift toward the unexaminable —
+galloper: it produces fluent volume at a marginal cost far below anyone's cost of
+reviewing it, with no stake in whether anyone can. Left ungoverned, the artifacts drift toward the unexaminable —
 the 3,000-line component mixing every responsibility, the 1,400-line diff that gets
 a tired "LGTM", the refactor that silently deletes a feature somewhere in its bulk.
 
