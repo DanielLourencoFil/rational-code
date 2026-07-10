@@ -41,8 +41,8 @@ The living example is [agentic-harness](https://github.com/DanielLourencoFil/age
 | # | Chapter | Status |
 | --- | --- | --- |
 | 1 | **Equivocation** — one name, shifting meanings → `any`, coerced `==` → the type system as univocity enforcer | ✅ [published](chapters/01-equivocation.md) |
-| 2 | **Incomplete enumeration** — the ignored case → non-exhaustive `switch` over a union → exhaustiveness as an error | planned |
-| 3 | **Circular justification** — A because B because A → import cycles → cycle ban (and the day the rule was wired but blind) | planned |
+| 2 | **Incomplete enumeration** — the ignored case → non-exhaustive `switch` over a union → exhaustiveness as an error | ✅ [published](chapters/02-incomplete-enumeration.md) |
+| 3 | **Circular justification** — A because B because A → import cycles → cycle ban (and the day the rule was wired but blind) | ✅ [published](chapters/03-circular-justification.md) |
 | 4 | **Begging the question** — a test derived from the implementation's own output proves nothing → tests before code + mutation testing | ⛔ blocked on mutation testing landing in a real project |
 
 ### Part II — Examinability (can the claim even be checked?)
@@ -58,7 +58,7 @@ The living example is [agentic-harness](https://github.com/DanielLourencoFil/age
 | --- | --- | --- |
 | 7 | **Burden of proof** — "it's done" is a claim, not a fact → the evidence gate; "compiles" ≠ "works" | planned |
 | 8 | **The framing effect** — "find bugs" manufactures bugs → neutral audit prompts that allow "none found" | planned |
-| 9 | **The illusory foundation** — a green gate is only as strong as what it checks → negative tests for the gates themselves | planned |
+| 9 | **The illusory foundation** — a green gate is only as strong as what it checks → negative tests for the gates themselves | ⛔ blocked on [agentic-harness#2](https://github.com/DanielLourencoFil/agentic-harness/pull/2) merging |
 | 10 | **Pre-registration** — kill criteria written before the bet, so failure cannot be renegotiated | planned |
 | 11 | **Calibration** — trust as a measured number: real vs confabulated findings per audit | ⛔ blocked on enough audit data |
 | 12 | **The mechanized elenchus** — four questions no feature may skip → planning gated on testable answers | ⛔ blocked on the /plan-feature skill shipping |
