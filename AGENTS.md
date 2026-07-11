@@ -32,6 +32,19 @@ not "to be improved later" — it is not committed.
 - No name-dropping that does not carry load: a philosopher or a law is cited only
   where removing the citation would weaken the argument.
 
+## Drafting protocol (thesis, intros, any argumentative text)
+
+- **No prose before an approved skeleton.** The argument is written first as bare,
+  numbered claims — no rhetoric, no metaphors — and the author marks each line
+  right/wrong/missing. Prose is generated only from an approved skeleton, and adds
+  **zero concepts** to it.
+- **The author owns concepts; the machine owns mechanics** (translation, grammar,
+  tightening, running the checker). A session that invents a framing the author did
+  not state has exceeded its role — that is how plausible sentences compose into
+  nonsense.
+- One metaphor system per text. An aphorism must earn its place by carrying an
+  argument step, not decorating one.
+
 ## Rite
 
 - Before committing prose: run `node scripts/check-book.mjs` locally; fix, don't
