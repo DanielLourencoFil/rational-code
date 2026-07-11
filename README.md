@@ -5,52 +5,50 @@ development — and how to turn each principle into something a machine enforces
 
 ## The thesis
 
-An agentic AI is an abundance machine: it can produce more candidate artifacts —
-lines, modules, whole features — than anyone can judge. Abundance moves the
-bottleneck. While candidates were scarce and expensive, producing them was the cost
-center and judging them was incidental. When candidates become abundant and cheap —
-not free: tokens, prompting and human feedback all cost — **selection becomes the
-entire game**: a system's output is worth exactly what its selection process can
-vouch for.
+Coding is a form of rational discourse. A program asserts, defines, infers, and
+justifies — and like every rational discourse it is bound by the same fundamental
+rules and prey to the same fundamental vices. Equivocation, incomplete case
+analysis, circular justification, verbosity that defeats scrutiny: every classical
+failure of reasoning has an exact counterpart in code. This book maps them one by
+one.
 
-Selection costs split in two, and the split organizes everything in this book:
+None of this is foreign to programming. The traditional craft already embodies the
+discipline in its rites: code review is peer scrutiny, testing is experiment,
+"clean code" is a catalogue of composition rules. The nomenclature differs from the
+classical one; the principles — and the problems — are the same.
 
-- **Specified properties** — types align, every case is handled, tests pass,
-  invariants hold — are cheap to verify, often cheaper than generating the candidate:
-  checking a solution is easier than finding one. These can be wired into machines
-  that never tire and extend no charity.
-- **Unspecified properties** — does it fit the intent? does the whole cohere? is it
-  the right problem? — are expensive to verify, because verifying them *is* human
-  judgment.
+AI-generated code creates a new situation, for two reasons. First, whatever
+discipline a model displays is **incidental**: the residue of training, not the
+exercise of judgment. The model acts in accordance with the patterns without
+following them, and holds no commitment to any of them. Second, the economics of
+the craft inverted: generating became easy; checking stayed hard.
 
-The split is treacherous because model output looks uniformly good: its best and its
-worst work arrive equally fluent, so nothing on the surface says where a given
-artifact's defects live. Surface quality stopped carrying evidence; only checking
-does.
+Hence the question this essay examines: **how do you intentionally impose the
+patterns of rational discourse on a generator of rational discourse that is not
+itself rational?**
 
-The discipline follows: **specify everything that can be specified; wire every
-specified property into a mechanical filter; run the filters early and often; spend
-human judgment only on survivors, and only on the questions machines cannot ask.**
-Specification itself is the highest-leverage act — every property moved from the
-second column into the first converts dear judgment into cheap checking. That is what
-a spec, a scenario checklist, and a schema are *for*. And it explains the two facts
-this book keeps returning to: persona prompts fail because they try to improve
-production, which was never the bottleneck; gates work because they police selection,
-which is.
+The imposition comes in two families. **Self-limiting rules** — syntax and
+composition, checkable by machine — can eliminate malformed code at the root, or
+expose existing bad code by its form alone. **Principles of general coherence** —
+semantics, the fit of parts to a whole — remain matters of judgment. Arranged as a
+cascade of filters, the first family works early and often, so that the high-level
+work of rational activity — judgment — is spent on material worth judging. Code
+enjoys one advantage over every other discourse here: a mechanical referee is
+available. In conversation the norms of rationality bind only by good will; in
+software they can be physically enforced.
 
-One requirement is easy to miss and fatal to skip: **the specification must stand
-outside the code–test pair.** A test derived from what the code does proves nothing;
-code molded to a finite, visible test proves nothing either — both are the same
-circle. Verification carries evidential force only when what is checked comes from an
-independent point: scenarios owned by a human, properties quantified over generated
-cases, checks the implementation cannot see coming.
+The aim is not to remove the human from the loop; it is to **optimize what reaches
+the human** — less plausible simulacrum, more real discourse. Nothing in this is
+new. It is a structured, conscious way of making the machine write clean code.
 
-The toolkit for all of this is old: the discipline of rational discourse — univocal
-terms, complete case analysis, burden of proof on the claimant, falsifiable claims,
-calibrated trust — is the oldest catalogue of specifiable properties of good
-thinking. What is new is that in software, unlike in conversation, **most of these
-norms can be physically enforced.** The secret is knowing the principles and
-discovering how to wire them.
+A second aim runs alongside: brakes against the destructive habits of long
+generation. The longer a generative process runs, the more it tends toward
+disorganization — parts each coherent in themselves do not guarantee a coherent
+whole, because the generator lacks the context to honor all of its commitments at
+once. And a body of code, like a body of claims, must not be allowed to
+trivialize: once it admits contradictory assumptions, any change can be justified
+by citing *some* precedent — the practical form of the logician's explosion, where
+everything follows from everything.
 
 ## The constitutional rule of this book
 
@@ -63,8 +61,10 @@ on the mechanism landing first.
 
 **This book is written at the speed of its own evidence.**
 
-The living example is [agentic-harness](https://github.com/DanielLourencoFil/agentic-harness)
-— the enforcement system these chapters point into — and the projects built with it.
+The direction of flow is fixed: practice feeds the harness, and the harness feeds
+this reflection — never the reverse. The mechanisms these chapters point into were
+built and run in [agentic-harness](https://github.com/DanielLourencoFil/agentic-harness)
+and the projects behind it; the essay studies the practice, it does not dictate to it.
 
 ## Index
 
